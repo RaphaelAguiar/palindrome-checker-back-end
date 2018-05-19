@@ -13,11 +13,11 @@ module.exports = (app) => {
       return str === revertString(str)
     }
 
-    app.post("/is-palindrome",(req,res) => {
-      if(isPalindrome(req.body.word)){
-        res.status(200).send({message: 'is a palindrome'}) 
+    app.get("/is-palindrome/:word",(req,res) => {
+      if(isPalindrome(req.params.word)){
+        res.status(200).send({'message': 'is a palindrome'}) 
       }else{
-        res.status(400).send({message: 'is not a palindrome'}) 
+        res.status(400).send({'message': 'is not a palindrome'}) 
       }
     });
 }

@@ -1,7 +1,7 @@
 {
   "name": "palindrome-checker-back-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "A palindrome is a word, phrase, number, or another sequence of characters which reads the same backward or forward, this web-service check if the phrase inputed is a palindrome",
   "author": "Raphael Aguiar",
   "license": "ISC",
   "main": "./server/index.js",
