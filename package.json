@@ -1,0 +1,26 @@
+{
+  "name": "palindrome-checker-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Raphael Aguiar",
+  "license": "ISC",
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "test": "node ./server/index.js | mocha ./test/specs/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelAguiar/palindrome-checker-back-end.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "mocha": "2.3.1",
+    "request": "2.86.0",
+    "chai": "4.1.2"
+  }
+}
